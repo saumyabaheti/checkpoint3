@@ -1,7 +1,7 @@
 body {
 
     
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 nav li {
@@ -9,22 +9,29 @@ nav li {
     margin: 20px;
     background-color: rgb(5, 5, 46);
     padding: 20px;
-    display: inline-block;
-    
 
 }
 
 nav {
 
-
     background-color: rgb(5, 5, 46);
+    height: 400px;
 
 
 }
+
+.navcontainer {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
 nav li a {
 
     color: white;
     text-decoration: none;
+    font: 19px;
 
 }
 
@@ -32,9 +39,15 @@ h1 {
 
     font-size: 40px;
     text-align: center;
-    margin-top: 20px;
-    font-style: italic;
-    margin-bottom: 20px;
+    color: white;
+    /* margin-top: 20px; */
+    /* font-style: italic; */
+    /* margin-bottom: 20px; */
+    background-image: url("../images/stars2.png");
+    background-color: #f1f1f1;
+    padding: 60px;
+    font-family: 'Space Grotesk', sans-serif;
+    
 
 }
 
@@ -72,7 +85,12 @@ img:hover {
     font-size: larger;
     color: cornsilk;
     text-decoration: underline;
+    
 
+}
+
+.item {
+    align-self: center;
 }
 
 .skip {
@@ -82,19 +100,98 @@ img:hover {
 
 footer {
 
+  
     background-color: rgb(5, 5, 46);
     padding-bottom: 20px;
-    color: white;
-    
+    color: white;    
     
 }
+
+footer a {
+    color: white;
+}
+
+footer i {
+    display: inline-block;
+    margin-left: 200px;
+    padding-top: 10px;
+}
+
 
 footer p {
 
     padding-top: 10px;
-    text-align: left;
+    text-align: center;
     margin-left: 10px;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.container div {
+    grid-column: 1 / 2;
+    text-align: center;
+    background-color: cornflowerblue;
+
+}
+
+form {
+
+    margin-left: 75px;
+    margin-bottom: 75px;
+    margin-top: 75px;
+
+}
+
+
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+    
+    }
+  
+    to {
+      margin-left: 50px;
+      
+    }
+  }
+
+  .animate {
+    margin-left: 50px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  .animatetwo {
+    margin-left: 50px;
+  }
+
+  .btn {
+      margin-bottom: 10px;
+      margin-left: 150px;
+  }
+
+  #clicked-feedback {
+
+    margin-left:50px;
+  }
+
+  @media (prefers-reduced-motion) {
+    .animate {
+
+        animation: none;
+
+    }
+  }
+  
+  
+
+
+
+
 
 
 
